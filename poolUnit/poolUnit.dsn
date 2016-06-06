@@ -1,0 +1,250 @@
+(pcb /Users/eugen/kicad/projects/poolUnit/poolUnit.dsn
+  (parser
+    (string_quote ")
+    (space_in_quoted_tokens on)
+    (host_cad "KiCad's Pcbnew")
+    (host_version "4.0.1-stable")
+  )
+  (resolution um 10)
+  (unit um)
+  (structure
+    (layer F.Cu
+      (type signal)
+      (property
+        (index 0)
+      )
+    )
+    (layer B.Cu
+      (type signal)
+      (property
+        (index 1)
+      )
+    )
+    (boundary
+      (rect pcb 26355 -13815 59695 -80025)
+    )
+    (via "Via[0-1]_2000:1200_um")
+    (rule
+      (width 1200)
+      (clearance 500.1)
+      (clearance 500.1 (type default_smd))
+      (clearance 125 (type smd_smd))
+    )
+  )
+  (placement
+    (component Capacitors_SMD:C_1206_HandSoldering
+      (place C1 55880 -76200 front 90 (PN 0.1mu))
+    )
+    (component Resistors_SMD:R_1210_HandSoldering
+      (place R1 43180 -31750 front 180 (PN 4.7K))
+      (place R3 30480 -73660 front 270 (PN 10K))
+      (place R4 35560 -73660 front 270 (PN 10K))
+      (place R5 50800 -76200 front 90 (PN 10K))
+      (place R2 43180 -36830 front 180 (PN 4.7K))
+    )
+    (component "TO_SOT_Packages_SMD:TO-252-2Lead"
+      (place U1 43180 -45720 front 180 (PN LD1117S33CTR))
+    )
+    (component Pin_Headers:Pin_Header_Straight_1x01
+      (place P9 50800 -50800 front 0 (PN A_PH))
+    )
+    (component pin_heads:Pin_1x3_hand_soldering
+      (place P1 30480 -22860 front 270 (PN WATER_DS))
+      (place P3 35560 -53340 front 270 (PN A_ESP))
+      (place P4 30480 -33020 front 270 (PN AIR_DS))
+      (place P8 50800 -27940 front 90 (PN A_POWER))
+      (place Q1 35560 -66040 front 180 (PN BC547))
+    )
+    (component pin_heads:Pin_1x2_hand_soldering
+      (place P2 35560 -33020 front 270 (PN A_DS))
+      (place P5 55880 -25400 front 270 (PN RST))
+      (place P6 50800 -17780 front 0 (PN POWER))
+    )
+    (component pin_heads:Pin_1x6_hand_soldering
+      (place P7 55880 -48260 front 90 (PN PH_MODULE))
+    )
+    (component pin_heads:Pin_2x4_hand_soldering
+      (place U2 45720 -68580 front 270 (PN "ESP-01v090"))
+    )
+  )
+  (library
+    (image Capacitors_SMD:C_1206_HandSoldering
+      (outline (path signal 50  -3300 1150  3300 1150))
+      (outline (path signal 50  -3300 -1150  3300 -1150))
+      (outline (path signal 50  -3300 1150  -3300 -1150))
+      (outline (path signal 50  3300 1150  3300 -1150))
+      (outline (path signal 150  1000 1025  -1000 1025))
+      (outline (path signal 150  -1000 -1025  1000 -1025))
+      (pin Rect[T]Pad_2000x1600_um 1 -2000 0)
+      (pin Rect[T]Pad_2000x1600_um 2 2000 0)
+    )
+    (image Resistors_SMD:R_1210_HandSoldering
+      (outline (path signal 50  -3300 1600  3300 1600))
+      (outline (path signal 50  -3300 -1600  3300 -1600))
+      (outline (path signal 50  -3300 1600  -3300 -1600))
+      (outline (path signal 50  3300 1600  3300 -1600))
+      (outline (path signal 150  1000 -1475  -1000 -1475))
+      (outline (path signal 150  -1000 1475  1000 1475))
+      (pin Rect[T]Pad_2000x2500_um 1 -2000 0)
+      (pin Rect[T]Pad_2000x2500_um 2 2000 0)
+    )
+    (image "TO_SOT_Packages_SMD:TO-252-2Lead"
+      (outline (path signal 150  1397 1524  1397 -1651))
+      (outline (path signal 150  1397 -1651  3175 -1651))
+      (outline (path signal 150  3175 -1651  3175 1524))
+      (outline (path signal 150  -3175 1524  -3175 -1651))
+      (outline (path signal 150  -3175 -1651  -1397 -1651))
+      (outline (path signal 150  -1397 -1651  -1397 1524))
+      (outline (path signal 150  3429 7620  3429 1524))
+      (outline (path signal 150  3429 1524  -3429 1524))
+      (outline (path signal 150  -3429 1524  -3429 9398))
+      (outline (path signal 150  -3429 9525  3429 9525))
+      (outline (path signal 150  3429 9398  3429 7620))
+      (pin Rect[T]Pad_1651x3048_um 1 -2286 0)
+      (pin Rect[T]Pad_6096x6096_um 2 0 6350)
+      (pin Rect[T]Pad_1651x3048_um 3 2286 0)
+    )
+    (image Pin_Headers:Pin_Header_Straight_1x01
+      (outline (path signal 150  1550 1550  1550 0))
+      (outline (path signal 50  -1750 1750  -1750 -1750))
+      (outline (path signal 50  1750 1750  1750 -1750))
+      (outline (path signal 50  -1750 1750  1750 1750))
+      (outline (path signal 50  -1750 -1750  1750 -1750))
+      (outline (path signal 150  -1550 0  -1550 1550))
+      (outline (path signal 150  -1550 1550  1550 1550))
+      (outline (path signal 150  -1270 -1270  1270 -1270))
+      (pin Rect[A]Pad_2235.2x2235.2_um 1 0 0)
+    )
+    (image pin_heads:Pin_1x3_hand_soldering
+      (pin Rect[A]Pad_2001x3000_um 1 0 0)
+      (pin Rect[A]Pad_2001x3000_um 2 2540 0)
+      (pin Rect[A]Pad_2001x3000_um 3 5080 0)
+    )
+    (image pin_heads:Pin_1x2_hand_soldering
+      (pin Rect[A]Pad_2001x3000_um 1 0 0)
+      (pin Rect[A]Pad_2001x3000_um 2 2540 0)
+    )
+    (image pin_heads:Pin_1x6_hand_soldering
+      (pin Rect[A]Pad_2001x3000_um 1 0 0)
+      (pin Rect[A]Pad_2001x3000_um 2 2540 0)
+      (pin Rect[A]Pad_2001x3000_um 3 5080 0)
+      (pin Rect[A]Pad_2001x3000_um 4 7620 0)
+      (pin Rect[A]Pad_2001x3000_um 5 10160 0)
+      (pin Rect[A]Pad_2001x3000_um 6 12700 0)
+    )
+    (image pin_heads:Pin_2x4_hand_soldering
+      (pin Rect[A][0,500]Pad_2001x3000_um 2 0 0)
+      (pin "Rect[A][0,-500]Pad_2001x3000_um" 1 0 -2540)
+      (pin Rect[A][0,500]Pad_2001x3000_um 4 2540 0)
+      (pin "Rect[A][0,-500]Pad_2001x3000_um" 3 2540 -2540)
+      (pin Rect[A][0,500]Pad_2001x3000_um 8 7620 0)
+      (pin Rect[A][0,500]Pad_2001x3000_um 6 5080 0)
+      (pin "Rect[A][0,-500]Pad_2001x3000_um" 5 5080 -2540)
+      (pin "Rect[A][0,-500]Pad_2001x3000_um" 7 7620 -2540)
+    )
+    (padstack Rect[T]Pad_2000x2500_um
+      (shape (rect F.Cu -1000 -1250 1000 1250))
+      (attach off)
+    )
+    (padstack Rect[T]Pad_2000x1600_um
+      (shape (rect F.Cu -1000 -800 1000 800))
+      (attach off)
+    )
+    (padstack Rect[A][0,500]Pad_2001x3000_um
+      (shape (rect F.Cu -1000.5 -1000 1000.5 2000))
+      (shape (rect B.Cu -1000.5 -1000 1000.5 2000))
+      (attach off)
+    )
+    (padstack Rect[A]Pad_2001x3000_um
+      (shape (rect F.Cu -1000.5 -1500 1000.5 1500))
+      (shape (rect B.Cu -1000.5 -1500 1000.5 1500))
+      (attach off)
+    )
+    (padstack "Rect[A][0,-500]Pad_2001x3000_um"
+      (shape (rect F.Cu -1000.5 -2000 1000.5 1000))
+      (shape (rect B.Cu -1000.5 -2000 1000.5 1000))
+      (attach off)
+    )
+    (padstack Rect[A]Pad_2235.2x2235.2_um
+      (shape (rect F.Cu -1117.6 -1117.6 1117.6 1117.6))
+      (shape (rect B.Cu -1117.6 -1117.6 1117.6 1117.6))
+      (attach off)
+    )
+    (padstack Rect[T]Pad_6096x6096_um
+      (shape (rect F.Cu -3048 -3048 3048 3048))
+      (attach off)
+    )
+    (padstack Rect[T]Pad_1651x3048_um
+      (shape (rect F.Cu -825.5 -1524 825.5 1524))
+      (attach off)
+    )
+    (padstack "Via[0-1]_2000:1200_um"
+      (shape (circle F.Cu 2000))
+      (shape (circle B.Cu 2000))
+      (attach off)
+    )
+  )
+  (network
+    (net +3V3
+      (pins C1-1 R3-2 R4-2 R5-1 U1-2 U2-7)
+    )
+    (net GND
+      (pins C1-2 U1-1 P1-3 P4-3 P5-1 P6-2 P8-2 P7-4 P7-5 Q1-3 U2-2)
+    )
+    (net +5V
+      (pins R1-1 U1-3 R2-1 P1-1 P4-1 P6-1 P8-3 P7-6)
+    )
+    (net /TX_1
+      (pins P3-3 U2-8)
+    )
+    (net /RX_1
+      (pins P3-2 U2-1)
+    )
+    (net /PH_DATA
+      (pins P9-1 P7-3)
+    )
+    (net "Net-(P7-Pad1)"
+      (pins P7-1)
+    )
+    (net "Net-(P7-Pad2)"
+      (pins P7-2)
+    )
+    (net "Net-(R3-Pad1)"
+      (pins R3-1 U2-3)
+    )
+    (net "Net-(U2-Pad4)"
+      (pins U2-4)
+    )
+    (net /ESP_RESET
+      (pins P3-1 Q1-2)
+    )
+    (net "Net-(R5-Pad2)"
+      (pins R5-2 U2-6)
+    )
+    (net "Net-(P5-Pad2)"
+      (pins P5-2 P8-1)
+    )
+    (net /W_DATA
+      (pins R1-2 P1-2 P2-1)
+    )
+    (net /A_DATA
+      (pins R2-2 P2-2 P4-2)
+    )
+    (net "Net-(Q1-Pad1)"
+      (pins R4-1 Q1-1 U2-5)
+    )
+    (class kicad_default "" +3V3 +5V /A_DATA /ESP_RESET /PH_DATA /RX_1 /TX_1
+      /W_DATA GND "Net-(P5-Pad2)" "Net-(P7-Pad1)" "Net-(P7-Pad2)" "Net-(Q1-Pad1)"
+      "Net-(R3-Pad1)" "Net-(R5-Pad2)" "Net-(U2-Pad4)"
+      (circuit
+        (use_via Via[0-1]_2000:1200_um)
+      )
+      (rule
+        (width 1200)
+        (clearance 500.1)
+      )
+    )
+  )
+  (wiring
+  )
+)
