@@ -1,0 +1,174 @@
+(pcb /Users/eugen/kicad/projects/test/Untitled.dsn
+  (parser
+    (string_quote ")
+    (space_in_quoted_tokens on)
+    (host_cad "KiCad's Pcbnew")
+    (host_version "4.0.1-stable")
+  )
+  (resolution um 10)
+  (unit um)
+  (structure
+    (layer F.Cu
+      (type signal)
+      (property
+        (index 0)
+      )
+    )
+    (layer B.Cu
+      (type signal)
+      (property
+        (index 1)
+      )
+    )
+    (boundary
+      (rect pcb 114172 -64795 142368 -95075)
+    )
+    (via "Via[0-1]_600:400_um")
+    (rule
+      (width 750)
+      (clearance 300.1)
+      (clearance 300.1 (type default_smd))
+      (clearance 75 (type smd_smd))
+    )
+  )
+  (placement
+    (component Pin_Headers:Pin_Header_Straight_1x08
+      (place P1 137160 -71120 front 0 (PN CONN_01X08))
+      (place P2 119380 -88900 front 180 (PN CONN_01X08))
+    )
+    (component "SMD_Packages:SO-16-N"
+      (place U1 128270 -80010 front 90 (PN ULN2003))
+    )
+  )
+  (library
+    (image Pin_Headers:Pin_Header_Straight_1x08
+      (outline (path signal 50  -1750 1750  -1750 -19550))
+      (outline (path signal 50  1750 1750  1750 -19550))
+      (outline (path signal 50  -1750 1750  1750 1750))
+      (outline (path signal 50  -1750 -19550  1750 -19550))
+      (outline (path signal 150  1270 -1270  1270 -19050))
+      (outline (path signal 150  1270 -19050  -1270 -19050))
+      (outline (path signal 150  -1270 -19050  -1270 -1270))
+      (outline (path signal 150  1550 1550  1550 0))
+      (outline (path signal 150  1270 -1270  -1270 -1270))
+      (outline (path signal 150  -1550 0  -1550 1550))
+      (outline (path signal 150  -1550 1550  1550 1550))
+      (pin Rect[A]Pad_2032x1727.2_um 1 0 0)
+      (pin Oval[A]Pad_2032x1727.2_um 2 0 -2540)
+      (pin Oval[A]Pad_2032x1727.2_um 3 0 -5080)
+      (pin Oval[A]Pad_2032x1727.2_um 4 0 -7620)
+      (pin Oval[A]Pad_2032x1727.2_um 5 0 -10160)
+      (pin Oval[A]Pad_2032x1727.2_um 6 0 -12700)
+      (pin Oval[A]Pad_2032x1727.2_um 7 0 -15240)
+      (pin Oval[A]Pad_2032x1727.2_um 8 0 -17780)
+    )
+    (image "SMD_Packages:SO-16-N"
+      (outline (path signal 150  -5588 762  -4826 762))
+      (outline (path signal 150  -4826 762  -4826 -762))
+      (outline (path signal 150  -4826 -762  -5588 -762))
+      (outline (path signal 150  5588 2286  5588 -2286))
+      (outline (path signal 150  5588 -2286  -5588 -2286))
+      (outline (path signal 150  -5588 -2286  -5588 2286))
+      (outline (path signal 150  -5588 2286  5588 2286))
+      (pin Rect[T]Pad_508x1143_um 16 -4445 3175)
+      (pin Rect[T]Pad_508x1143_um 14 -1905 3175)
+      (pin Rect[T]Pad_508x1143_um 13 -635 3175)
+      (pin Rect[T]Pad_508x1143_um 12 635 3175)
+      (pin Rect[T]Pad_508x1143_um 11 1905 3175)
+      (pin Rect[T]Pad_508x1143_um 10 3175 3175)
+      (pin Rect[T]Pad_508x1143_um 9 4445 3175)
+      (pin Rect[T]Pad_508x1143_um 8 4445 -3175)
+      (pin Rect[T]Pad_508x1143_um 7 3175 -3175)
+      (pin Rect[T]Pad_508x1143_um 6 1905 -3175)
+      (pin Rect[T]Pad_508x1143_um 5 635 -3175)
+      (pin Rect[T]Pad_508x1143_um 4 -635 -3175)
+      (pin Rect[T]Pad_508x1143_um 3 -1905 -3175)
+      (pin Rect[T]Pad_508x1143_um 2 -3175 -3175)
+      (pin Rect[T]Pad_508x1143_um 1 -4445 -3175)
+      (pin Rect[T]Pad_508x1143_um 15 -3175 3175)
+    )
+    (padstack Oval[A]Pad_2032x1727.2_um
+      (shape (path F.Cu 1727.2  -152.4 0  152.4 0))
+      (shape (path B.Cu 1727.2  -152.4 0  152.4 0))
+      (attach off)
+    )
+    (padstack Rect[A]Pad_2032x1727.2_um
+      (shape (rect F.Cu -1016 -863.6 1016 863.6))
+      (shape (rect B.Cu -1016 -863.6 1016 863.6))
+      (attach off)
+    )
+    (padstack Rect[T]Pad_508x1143_um
+      (shape (rect F.Cu -254 -571.5 254 571.5))
+      (attach off)
+    )
+    (padstack "Via[0-1]_600:400_um"
+      (shape (circle F.Cu 600))
+      (shape (circle B.Cu 600))
+      (attach off)
+    )
+  )
+  (network
+    (net GND
+      (pins P1-1 U1-8)
+    )
+    (net "Net-(P1-Pad2)"
+      (pins P1-2 U1-7)
+    )
+    (net "Net-(P1-Pad3)"
+      (pins P1-3 U1-6)
+    )
+    (net "Net-(P1-Pad4)"
+      (pins P1-4 U1-5)
+    )
+    (net "Net-(P1-Pad5)"
+      (pins P1-5 U1-4)
+    )
+    (net "Net-(P1-Pad6)"
+      (pins P1-6 U1-3)
+    )
+    (net "Net-(P1-Pad7)"
+      (pins P1-7 U1-2)
+    )
+    (net "Net-(P1-Pad8)"
+      (pins P1-8 U1-1)
+    )
+    (net "Net-(P2-Pad1)"
+      (pins P2-1 U1-16)
+    )
+    (net "Net-(P2-Pad2)"
+      (pins P2-2 U1-15)
+    )
+    (net "Net-(P2-Pad3)"
+      (pins P2-3 U1-14)
+    )
+    (net "Net-(P2-Pad4)"
+      (pins P2-4 U1-13)
+    )
+    (net "Net-(P2-Pad5)"
+      (pins P2-5 U1-12)
+    )
+    (net "Net-(P2-Pad6)"
+      (pins P2-6 U1-11)
+    )
+    (net "Net-(P2-Pad7)"
+      (pins P2-7 U1-10)
+    )
+    (net "Net-(P2-Pad8)"
+      (pins P2-8 U1-9)
+    )
+    (class kicad_default "" GND "Net-(P1-Pad2)" "Net-(P1-Pad3)" "Net-(P1-Pad4)"
+      "Net-(P1-Pad5)" "Net-(P1-Pad6)" "Net-(P1-Pad7)" "Net-(P1-Pad8)" "Net-(P2-Pad1)"
+      "Net-(P2-Pad2)" "Net-(P2-Pad3)" "Net-(P2-Pad4)" "Net-(P2-Pad5)" "Net-(P2-Pad6)"
+      "Net-(P2-Pad7)" "Net-(P2-Pad8)"
+      (circuit
+        (use_via Via[0-1]_600:400_um)
+      )
+      (rule
+        (width 750)
+        (clearance 300.1)
+      )
+    )
+  )
+  (wiring
+  )
+)
