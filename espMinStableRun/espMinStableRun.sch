@@ -1,0 +1,170 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:ESP8266
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ESP-12E U1
+U 1 1 59A667DA
+P 2900 1850
+F 0 "U1" H 2900 1750 50  0000 C CNN
+F 1 "ESP-12E" H 2900 1950 50  0000 C CNN
+F 2 "" H 2900 1850 50  0001 C CNN
+F 3 "" H 2900 1850 50  0001 C CNN
+	1    2900 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 59A66867
+P 1850 1550
+F 0 "R1" V 1930 1550 50  0000 C CNN
+F 1 "10K" V 1850 1550 50  0000 C CNN
+F 2 "" V 1780 1550 50  0001 C CNN
+F 3 "" H 1850 1550 50  0001 C CNN
+	1    1850 1550
+	0    1    1    0   
+$EndComp
+$Comp
+L R R2
+U 1 1 59A668BA
+P 1850 1750
+F 0 "R2" V 1930 1750 50  0000 C CNN
+F 1 "10K" V 1850 1750 50  0000 C CNN
+F 2 "" V 1780 1750 50  0001 C CNN
+F 3 "" H 1850 1750 50  0001 C CNN
+	1    1850 1750
+	0    1    1    0   
+$EndComp
+$Comp
+L R R4
+U 1 1 59A668DF
+P 3950 2150
+F 0 "R4" V 4030 2150 50  0000 C CNN
+F 1 "10K" V 3950 2150 50  0000 C CNN
+F 2 "" V 3880 2150 50  0001 C CNN
+F 3 "" H 3950 2150 50  0001 C CNN
+	1    3950 2150
+	0    1    1    0   
+$EndComp
+$Comp
+L R R3
+U 1 1 59A66930
+P 3950 1950
+F 0 "R3" V 4030 1950 50  0000 C CNN
+F 1 "10K" V 3950 1950 50  0000 C CNN
+F 2 "" V 3880 1950 50  0001 C CNN
+F 3 "" H 3950 1950 50  0001 C CNN
+	1    3950 1950
+	0    1    1    0   
+$EndComp
+$Comp
+L +3.3V #PWR1
+U 1 1 59A66987
+P 1700 1550
+F 0 "#PWR1" H 1700 1400 50  0001 C CNN
+F 1 "+3.3V" H 1700 1690 50  0000 C CNN
+F 2 "" H 1700 1550 50  0001 C CNN
+F 3 "" H 1700 1550 50  0001 C CNN
+	1    1700 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR2
+U 1 1 59A669A5
+P 1700 1750
+F 0 "#PWR2" H 1700 1600 50  0001 C CNN
+F 1 "+3.3V" H 1700 1890 50  0000 C CNN
+F 2 "" H 1700 1750 50  0001 C CNN
+F 3 "" H 1700 1750 50  0001 C CNN
+	1    1700 1750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L +3.3V #PWR3
+U 1 1 59A669C3
+P 2000 2250
+F 0 "#PWR3" H 2000 2100 50  0001 C CNN
+F 1 "+3.3V" H 2000 2390 50  0000 C CNN
+F 2 "" H 2000 2250 50  0001 C CNN
+F 3 "" H 2000 2250 50  0001 C CNN
+	1    2000 2250
+	-1   0    0    1   
+$EndComp
+$Comp
+L +3.3V #PWR5
+U 1 1 59A669E1
+P 4100 1950
+F 0 "#PWR5" H 4100 1800 50  0001 C CNN
+F 1 "+3.3V" H 4100 2090 50  0000 C CNN
+F 2 "" H 4100 1950 50  0001 C CNN
+F 3 "" H 4100 1950 50  0001 C CNN
+	1    4100 1950
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR4
+U 1 1 59A669FF
+P 3800 2250
+F 0 "#PWR4" H 3800 2000 50  0001 C CNN
+F 1 "GND" H 3800 2100 50  0000 C CNN
+F 2 "" H 3800 2250 50  0001 C CNN
+F 3 "" H 3800 2250 50  0001 C CNN
+	1    3800 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR6
+U 1 1 59A66A1D
+P 4100 2150
+F 0 "#PWR6" H 4100 1900 50  0001 C CNN
+F 1 "GND" H 4100 2000 50  0000 C CNN
+F 2 "" H 4100 2150 50  0001 C CNN
+F 3 "" H 4100 2150 50  0001 C CNN
+	1    4100 2150
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:aquariumUnit_v2.1-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -45,7 +46,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L ESP-12E U1
+L ESP-12E-RESCUE-aquariumUnit_v2.1 U1
 U 1 1 574FE884
 P 2600 1600
 F 0 "U1" H 2600 1500 50  0000 C CNN
@@ -100,10 +101,6 @@ Text Label 3500 1900 0    60   ~ 0
 D15
 Text Label 3500 1400 0    60   ~ 0
 TX
-Text Label 2550 2500 3    60   ~ 0
-D9
-Text Label 2650 2500 3    60   ~ 0
-D10
 Text Label 1700 1600 0    60   ~ 0
 D16
 Text Label 1700 1700 0    60   ~ 0
@@ -656,9 +653,9 @@ D12
 Text Label 1500 4750 0    60   ~ 0
 D13
 Text Label 1500 4850 0    60   ~ 0
-D9
+RX
 Text Label 1500 4950 0    60   ~ 0
-D10
+TX
 Text Label 1500 5050 0    60   ~ 0
 D15
 Text Label 1500 5150 0    60   ~ 0
@@ -739,4 +736,6 @@ Wire Wire Line
 	1500 5250 1950 5250
 Wire Wire Line
 	1500 5150 1950 5150
+NoConn ~ 2550 2500
+NoConn ~ 2650 2500
 $EndSCHEMATC

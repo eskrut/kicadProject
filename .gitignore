@@ -1,3 +1,5 @@
 *.svg
 *.gcode
+*.gbr
+*.ngc
 
